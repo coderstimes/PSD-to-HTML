@@ -8,6 +8,7 @@
 }
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,12 +24,12 @@ h1 {
   color: #fff;
 }
 
-.clearfix::after{
-    content:"";
-    display: table;
-    clear: both;
-    height: 0;
-    visibility: hidden;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 0;
+  visibility: hidden;
 }
 /* ================== */
 /* reusable component */
@@ -53,52 +54,53 @@ h1 {
   font-size: 1.6rem;
 }
 
-section{
-    padding: 8rem 0;
+section {
+  padding: 8rem 0;
 }
-h2{
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 2rem;
-    color: #fff;
-    text-align: center;
+h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center;
 }
-h2::after{
-    content:"";
-    display:block;
-    height: .4rem;
-    background: #fff;
-    width: 8.5rem;
-    margin: auto;
-    margin-top: 2rem;
-}
-
-h3{
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    font-weight: 600;
+h2::after {
+  content: "";
+  display: block;
+  height: 0.4rem;
+  background: #fff;
+  width: 8.5rem;
+  margin: auto;
+  margin-top: 2rem;
 }
 
-.box{
-padding: 1px;
+h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
 }
 
-.box p{
-    font-size: 1.6rem;
-    font-weight: 300;
-    margin-top: 2.3rem;
+.box {
+  padding: 1px;
+}
+
+.box p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 2.3rem;
 }
 
 /* Paragraph */
 
-.little-description{
-    font-size: 1.8rem;
-    width: 60%;
-    margin-left:20% ;
-    line-height: 3rem;
+.little-description {
+  font-size: 1.8rem;
+  width: 60%;
+  margin-left: 20%;
+  line-height: 3rem;
 }
 
 /* ================== */
@@ -170,22 +172,87 @@ header {
 /* Services Section */
 /* ================== */
 
+.services-section {
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(rgba(23, 196, 165, 0.6), rgba(23, 196, 165, 0.6)),
+    url(./img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 
-.services-section{
+.services-section h2::after {
+  background: #14a58c;
+}
+
+.services-icon {
+  height: 12rem;
+  margin-top: 4.5rem;
+  margin-bottom: 3.5rem;
+}
+
+/* ================== */
+/* Team Section */
+/* ================== */
+
+.team-section {
+  text-align: center;
+  background: linear-gradient(rgba(231, 241, 248, .9), rgba(231, 241, 248, .9)) , url(img/bg-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.team-section h2 {
+  color: #3c4761;
+}
+.team-section h2::after {
+  background: #c8d9e5;
+}
+.team-member{
+  margin-top: 4.5rem;
+  margin-bottom: 3.5rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+}
+.team-section h3{
+  color: #27283d;
+}
+.role{
+  color: #30bae7;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  margin-top: .5rem;
+  display: inline-block;
+}
+.team-section .box p {
+  color:#3c4761 ;
+}
+.social-link{
+  margin-top: 4.5rem;
+}
+.social-link ul li {
+    display: inline-block;
+    margin: 0 .5rem;
+}
+
+.social-link ul li a:link {
     color: #fff;
-    text-align: center;
-    background:linear-gradient( rgba(23, 196, 165, 0.6),  rgba(23, 196, 165, 0.6)), url(./img/bg-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
-
-.services-section h2::after{
-    background: #14a58c;
+.social-link ul li a:link i::before{
+  background: #bdd1df;
+  width: 2rem;
+  height: 2rem;
+  display:block;
+  padding:1rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  transition: .5s;
 }
-
-.services-icon{
-    height: 12rem;
-    margin-top: 4.5rem;
-    margin-bottom: 3.5rem;
+.social-link ul li a:hover i::before{
+  background: #393939;
+  transform: rotate(360deg);
+  
 }
