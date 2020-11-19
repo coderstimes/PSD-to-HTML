@@ -18,8 +18,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- vendors file -->
-    <link rel="stylesheet" href="vendors/css/normalize.css" />
-    <link rel="stylesheet" href="vendors/css/gird.css" />
+    <link rel="stylesheet" href="/vendors/css/normalize.css" />
+    <link rel="stylesheet" href="/vendors/css/gird.css" />
+    <link rel="stylesheet" href="/vendors/css/animated-sercall.css" />
     <!-- resources file -->
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="stylesheet" href="resources/css/responsive.css" />
@@ -270,13 +271,112 @@
     <section class="skill-section" id="skill">
       <div class="row">
         <h2>WE GOT SKILLS1</h2>
-        <p>
+        <p class="little-description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-      <div class="col span_1_of_4 box">
-
+      <div class="row">
+        <div class="col span_1_of_4 box">
+          <svg
+            class="radial-progress web-design"
+            data-percentage="90"
+            viewBox="0 0 80 80"
+          >
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle
+              class="complete"
+              cx="40"
+              cy="40"
+              r="35"
+              style="stroke-dashoffset: 39.58406743523136"
+            ></circle>
+            <text
+              class="percentage"
+              x="50%"
+              y="57%"
+              transform="matrix(0, 1, -1, 0, 80, 0)"
+            >
+              90%
+            </text>
+          </svg>
+          <h3>Web Design</h3>
+        </div>
+        <div class="col span_1_of_4 box">
+          <svg
+            class="radial-progress html/css"
+            data-percentage="75"
+            viewBox="0 0 80 80"
+          >
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle
+              class="complete"
+              cx="40"
+              cy="40"
+              r="35"
+              style="stroke-dashoffset: 39.58406743523136"
+            ></circle>
+            <text
+              class="percentage"
+              x="50%"
+              y="57%"
+              transform="matrix(0, 1, -1, 0, 80, 0)"
+            >
+              75%
+            </text>
+          </svg>
+          <h3>HTML/CSS</h3>
+        </div>
+        <div class="col span_1_of_4 box">
+          <svg
+            class="radial-progress graphic-design"
+            data-percentage="70"
+            viewBox="0 0 80 80"
+          >
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle
+              class="complete"
+              cx="40"
+              cy="40"
+              r="35"
+              style="stroke-dashoffset: 39.58406743523136"
+            ></circle>
+            <text
+              class="percentage"
+              x="50%"
+              y="57%"
+              transform="matrix(0, 1, -1, 0, 80, 0)"
+            >
+              70%
+            </text>
+          </svg>
+          <h3>Graphic Design</h3>
+        </div>
+        <div class="col span_1_of_4 box">
+          <svg
+            class="radial-progress ui-ux"
+            data-percentage="85"
+            viewBox="0 0 80 80"
+          >
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle
+              class="complete"
+              cx="40"
+              cy="40"
+              r="35"
+              style="stroke-dashoffset: 39.58406743523136"
+            ></circle>
+            <text
+              class="percentage"
+              x="50%"
+              y="57%"
+              transform="matrix(0, 1, -1, 0, 80, 0)"
+            >
+              85%
+            </text>
+          </svg>
+          <h3>UI/UX</h3>
+        </div>
       </div>
     </section>
     <!-- End of Skill Section -->
@@ -286,6 +386,7 @@
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <script src="vendors/js/respond.min.js"></script>
     <script type="text/javascript" src="[JS library]"></script>
+    <script src="/vendors/js/animated-sercall.js"></script>
     <script src="/resources/js/main.js"></script>
   </body>
 </html>
