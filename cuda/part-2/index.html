@@ -392,43 +392,43 @@
       </div>
       <div class="row">
         <div class="portfolio-filter">
-          <button type="button">All</button>
-          <button type="button">web</button>
-          <button type="button">apps</button>
-          <button type="button">icons</button>
+          <button type="button" data-filter="all">All</button>
+          <button type="button" data-filter=".web">web</button>
+          <button type="button" data-filter=".apps">apps</button>
+          <button type="button" data-filter=".icons">icons</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col span_1_of_2 box">
+      <div class="row container">
+        <div class="col span_1_of_2 mix apps box">
           <img
             src="/resources/img/Portfolio1.png"
-            alt="Isometric Perspective Mock-Up"
+            alt="Isometric Perspective Mock-Up" class="portfolio-image"
           />
           <h4>Isometric Perspective Mock-Up</h4>
         </div>
-        <div class="col span_1_of_2 box">
-          <img src="/resources/img/Portfolio2.png" alt="Time Zone App UI" />
+        <div class="col span_1_of_2 mix apps web box">
+          <img src="/resources/img/Portfolio2.png" alt="Time Zone App UI" class="portfolio-image"/>
           <h4>Time Zone App UI</h4>
         </div>
-        <div class="col span_1_of_2 box">
+        <div class="col span_1_of_2 mix icons box">
           <img
             src="/resources/img/Portfolio3.png"
-            alt="Viro Media Players UI"
+            alt="Viro Media Players UI" class="portfolio-image"
           />
           <h4>Viro Media Players UI</h4>
         </div>
-        <div class="col span_1_of_2 box">
+        <div class="col span_1_of_2 mix icons web apps box">
           <img
             src="/resources/img/Portfolio4.png"
-            alt="Blog / Magazine Flat UI Kit"
+            alt="Blog / Magazine Flat UI Kit" class="portfolio-image"
           />
           <h4>Blog / Magazine Flat UI Kit</h4>
         </div>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <a href="#" class="btn btn-load-more">load more projects</a>
-      </div>
+      </div> -->
     </section>
     <!-- End of portfolio Section -->
 
@@ -438,6 +438,7 @@
     <script src="vendors/js/respond.min.js"></script>
     <script type="text/javascript" src="[JS library]"></script>
     <script src="/vendors/js/animated-sercall.js"></script>
+    <script src="/vendors/js/mixitup.min.js"></script>
     <script src="/resources/js/main.js"></script>
   </body>
 </html>

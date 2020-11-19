@@ -83,6 +83,12 @@ h3 {
   color: #fff;
   font-weight: 600;
 }
+h4{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+}
 
 .box {
   padding: 1px;
@@ -271,7 +277,7 @@ header {
     ),
     url(img/bg-5.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   text-align: center;
   position: center;
 }
@@ -303,4 +309,61 @@ svg.graphic-design circle {
 }
 svg.ui-ux circle {
   stroke: #eb7d4b;
+}
+
+/* ================== */
+/* portfolio Section */
+/* ================== */
+
+.portfolio-section {
+  background: linear-gradient(
+      rgba(255, 221, 153, 0.7),
+      rgba(255, 221, 153, 0.7)
+    ),
+    url(img/bg-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  color: #3c4761;
+}
+.portfolio-section h2::after {
+  background: #e5c37f;
+}
+.portfolio-filter{
+  margin: 4.5rem 0;
+}
+.portfolio-filter button{
+  background: #ebc985;
+  font-size: 1.8rem;
+  padding: 1.3rem 3rem;
+  border-radius: .5rem;
+  border: 0;
+  text-transform: uppercase;
+  color: #393939;
+  margin: 0 .5rem;
+  transition: .5s;
+}
+.portfolio-filter button:hover{
+  cursor: pointer;
+  box-shadow: inset 0 .3rem .5rem rgba(12, 30, 71, 0.5);
+}
+.portfolio-image{
+  width: 100%;
+  height: 30rem;
+}
+.portfolio-section .col:nth-child(3){
+  margin-left: 0;
+}
+.portfolio-section .btn-load-more{
+  background:#17c2a4 ;
+  border-color:#14a58c ;
+}
+
+.portfolio-section .mixitup-control-active {
+  background: #fff;
 }

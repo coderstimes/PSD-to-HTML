@@ -1,1 +1,3 @@
-console.log("sadat himel")
+$(document).ready(function(){
+    var mixer = mixitup('.container');
+});
