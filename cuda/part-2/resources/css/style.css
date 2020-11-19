@@ -198,7 +198,11 @@ header {
 
 .team-section {
   text-align: center;
-  background: linear-gradient(rgba(231, 241, 248, .9), rgba(231, 241, 248, .9)) , url(img/bg-3.jpg);
+  background: linear-gradient(
+      rgba(231, 241, 248, 0.9),
+      rgba(231, 241, 248, 0.9)
+    ),
+    url(img/bg-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -210,53 +214,93 @@ header {
 .team-section h2::after {
   background: #c8d9e5;
 }
-.team-member{
+.team-member {
   margin-top: 4.5rem;
   margin-bottom: 3.5rem;
   height: 20rem;
   width: 20rem;
   border-radius: 50%;
 }
-.team-section h3{
+.team-section h3 {
   color: #27283d;
 }
-.role{
+.role {
   color: #30bae7;
   font-size: 1.6rem;
   text-transform: capitalize;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   display: inline-block;
 }
 .team-section .box p {
-  color:#3c4761 ;
+  color: #3c4761;
 }
-.social-link{
+.social-link {
   margin-top: 4.5rem;
 }
 .social-link ul li {
-    display: inline-block;
-    margin: 0 .5rem;
+  display: inline-block;
+  margin: 0 0.5rem;
 }
 
 .social-link ul li a:link {
-    color: #fff;
+  color: #fff;
 }
-.social-link ul li a:link i::before{
+.social-link ul li a:link i::before {
   background: #bdd1df;
   width: 2rem;
   height: 2rem;
-  display:block;
-  padding:1rem;
+  display: block;
+  padding: 1rem;
   font-size: 2rem;
   border-radius: 50%;
-  transition: .5s;
+  transition: 0.5s;
 }
-.social-link ul li a:hover i::before{
+.social-link ul li a:hover i::before {
   background: #393939;
   transform: rotate(360deg);
-  
 }
 
-.skill-section{
-  
+/* ================== */
+/* Skill Section */
+/* ================== */
+
+.skill-section {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(img/bg-5.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align: center;
+  position: center;
+}
+.skill-section h2,
+.skill-section h3 {
+  color: #3c4761;
+}
+.skill-section h2::after {
+  background: #dfe8ed;
+}
+.skill-section .box {
+  margin-top: 4.5rem;
+}
+svg.radial-progress circle {
+  stroke-width: 5;
+}
+svg.radial-progress text {
+  fill: #3c4761;
+  font-size: 1.5rem;
+}
+svg.web-design circle {
+  stroke: #30bae7;
+}
+svg.html-css circle {
+  stroke: #d74680;
+}
+svg.graphic-design circle {
+  stroke: #15c7a8;
+}
+svg.ui-ux circle {
+  stroke: #eb7d4b;
 }
